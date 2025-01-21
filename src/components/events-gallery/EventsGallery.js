@@ -31,20 +31,20 @@ const eventsList = [
     name: (
       <h2 className="text-2xl mb-2 tracking-widest text-center">
         {" "}
-        <span className="text-4xl text-teal-600 tracking-widest">A</span>
-        stranova Coding
+        <span className="text-4xl text-teal-600 tracking-widest">R</span>
+        elay Coding
       </h2>
     ),
     hoverName: (
       <h2 className="text-2xl mb-3 tracking-widest">
         {" "}
-        <span className="text-4xl text-teal-500 tracking-widest">A</span>
-        stranova Coding
+        <span className="text-4xl text-teal-500 tracking-widest">R</span>
+        elay Coding
       </h2>
     ),
     image: AstranovaCoding,
     description:
-      "Are you a passionate coder looking for an opportunity to showcase your skills? If yes, then join us for our upcoming Competitive Coding Challenge!",
+      "Are you a passionate coder looking for an opportunity to showcase your team skills? If yes, then join us for our upcoming Competitive Coding Challenge!",
     path: "/events/astranova-coding",
   },
   {

@@ -134,8 +134,7 @@ export default function ContactUs() {
               }}
               className="text-3xl font-bold text-white AstranovaHeroFont tracking-widest"
             >
-              Astranova 2k24
-            </motion.h2>
+              Astranova 2k25            </motion.h2>
             <motion.p
               initial="hidden"
               whileInView="visible"

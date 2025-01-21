@@ -7,13 +7,13 @@ import { useState } from "react";
 import { AiOutlineDoubleRight } from "react-icons/ai";
 import { FaTeamspeak } from "react-icons/fa";
 import { SiEventstore, SiRiotgames } from "react-icons/si";
-// import { VscOrganization } from "react-icons/vsc";
+import { VscOrganization } from "react-icons/vsc";
 import { TbUnlink } from "react-icons/tb";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   return (
     <>
       <div
@@ -94,17 +94,9 @@ const Hero = () => {
                       E<span className="text-black text-xl">vents</span>{" "}
                     </div>
                   </Link>
+
                   <Link
-                    to={"/games/online"}
-                    className="flex text-lg px-4 py-4 items-center gap-3 transition-all duration-300 ease-in-out hover:bg-teal-300 "
-                  >
-                    <SiRiotgames size={20} />{" "}
-                    <div className="text-teal-500 text-2xl ">
-                      G<span className="text-black text-xl">ames</span>{" "}
-                    </div>
-                  </Link>
-                  <Link
-                    to={"#"}
+                    to={"/chronoline"}
                     className="flex text-lg px-4 py-4 items-center gap-3 transition-all duration-300 ease-in-out hover:bg-teal-300 "
                   >
                     <GiTimeSynchronization size={20} />{" "}
@@ -112,7 +104,7 @@ const Hero = () => {
                       C<span className="text-black text-xl">hronoline</span>{" "}
                     </div>
                   </Link>
-                  {/* <Link
+                  <Link
                     to={"/team"}
                     className="flex text-lg px-4 py-4 items-center gap-3 transition-all duration-300 ease-in-out hover:bg-teal-300 "
                   >
@@ -120,16 +112,9 @@ const Hero = () => {
                     <div className="text-teal-500 text-2xl ">
                       O<span className="text-black text-xl">ur Team</span>{" "}
                     </div>
-                  </Link> */}
-                  <Link
-                    to={"contact-us"}
-                    className="flex text-lg px-4 py-4 items-center gap-3 rounded-b-lg  transition-all duration-300 ease-in-out hover:bg-teal-300 "
-                  >
-                    <FaTeamspeak size={20} />{" "}
-                    <div className="text-teal-500 text-2xl ">
-                      C<span className="text-black text-xl">ontact Us</span>{" "}
-                    </div>
-                  </Link>
+                  </Link> 
+
+                  
                 </ul>
               </motion.div>
             )}
@@ -231,7 +216,7 @@ const Hero = () => {
               }}
               className="text-4xl lg:text-7xl tracking-widest"
             >
-              2<span className="text-teal-500">k</span>24
+              2<span className="text-teal-500">k</span>25
             </motion.h1>
             <motion.h2
               initial="hidden"
@@ -244,17 +229,17 @@ const Hero = () => {
               }}
               className="text-center text-xl dynamic-text-shadow lg:text-3xl pb-4"
             >
-              Innovate{"   "}
+              Rise{"   "}
               <span className="text-3xl md:text-4xl lg:text-5xl text-teal-500">
                 |
               </span>
               {"   "}
-              Elevate{"   "}
+              Revive{"   "}
               <span className="text-3xl md:text-4xl lg:text-5xl text-teal-500">
                 |
               </span>
               {"   "}
-              Celebrate
+              Revolutionize
             </motion.h2>
             <motion.div
               initial="hidden"
@@ -268,7 +253,7 @@ const Hero = () => {
             >
               <Link
                 to={"/events"}
-                className="w-[90%] lg:w-[60%] py-6 px-6 rounded-xl text-white text-xl tracking-widest bg-gradient-to-b from-[#9633d8] via-[#fffdfd00] to-[#9633d8]"
+                className="w-[90%] lg:w-[60%] py-6 px-6 rounded-xl text-white text-xl tracking-widest bg-gradient-to-b from-[teal] via-[#0A345D] to-[teal]"
               >
                 <span className="text-teal-500 text-3xl">J</span>oin the Exc
                 <span className="text-3xl text-teal-500">it</span>ement

@@ -11,20 +11,20 @@ const Venue = () => {
       <ul className="grid grid-cols-1 lg:pl-10 lg:grid-cols-4 gap-20">
         <li className="flex flex-col gap-3 -mb-4">
           <div className="flex gap-4">
-            <BsCalendarWeek size={50} color="#ab44ef" />
+            <BsCalendarWeek size={50} color="#5E9DB2" />
             <div className=" text-white AstranovaHeroFont">
               <h2 className="text-md tracking-widest">
                 {" "}
                 <span className="text-2xl text-teal-500">D</span>ate
               </h2>
-              <p className="text-sm tracking-widest">08-09 March 2024</p>
+              <p className="text-sm tracking-widest">28 Feb - 01 Mar 2025</p>
             </div>
           </div>
           <div className="h-1  w-[30%] sm:w-[16%] lg:w-[40%]  bg-teal-500 rounded-full"></div>
         </li>
         <li className="flex flex-col gap-3 -mb-4 ml-auto lg:ml-0">
           <div className="flex gap-4">
-            <MdShareLocation size={50} color="#ab44ef" />
+            <MdShareLocation size={50} color="#5E9DB2" />
             <div className=" text-white AstranovaHeroFont">
               <h2 className="text-md tracking-widest">
                 {" "}
@@ -37,7 +37,7 @@ const Venue = () => {
         </li>
         <li className="flex flex-col gap-3 -mb-2">
           <div className="flex gap-4">
-            <SiEventstore size={50} color="#ab44ef" />
+            <SiEventstore size={50} color="#5E9DB2" />
             <div className=" text-white AstranovaHeroFont">
               <h2 className="text-md tracking-widest">
                 {" "}
@@ -50,7 +50,7 @@ const Venue = () => {
         </li>
         <li className="flex flex-col gap-3 -mb-4 ml-auto lg:ml-0">
           <div className="flex gap-4">
-            <SiRiotgames size={50} color="#ab44ef" />
+            <SiRiotgames size={50} color="#5E9DB2" />
             <div className=" text-white AstranovaHeroFont">
               <h2 className="text-md tracking-widest">
                 {" "}

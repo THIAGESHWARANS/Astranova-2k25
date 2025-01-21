@@ -1,11 +1,11 @@
 .dynamic-text-shadow {
   /*  larger font size, more shadow distance  */
-  text-shadow: 0.1em 0.1em 0.2rem #8c20be;
+  text-shadow: 0.1em 0.1em 0.2rem blue;
 }
 
 .dynamic-celestra-shadow {
   /*  larger font size, more shadow distance  */
-  text-shadow: 0.12em 0.12em 0 #8c20be;
+  text-shadow: 0.12em 0.12em 0 #5E9DB2;
 }
 
 .dynamic-celestra-white-shadow {

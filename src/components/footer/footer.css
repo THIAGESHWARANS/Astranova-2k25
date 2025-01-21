@@ -79,7 +79,7 @@
 }
 
 .footer-links:hover {
-  color: rgba(148, 66, 224, 0.801);
+  color: teal;
 }
 
 .icons {
@@ -88,7 +88,7 @@
 
 .horizontal-line {
   width: 99%;
-  border: 1px solid rgba(128, 60, 184, 0.572);
+  border: 1px solid teal;
   margin: auto;
 }
 .footer-bottom {

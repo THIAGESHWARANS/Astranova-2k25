@@ -18,8 +18,7 @@ const Footer = () => {
           <div className="footer-container11">
             <img src={logo} alt="Celestra Logo" className="footer-logo" />
             <h3 className="footer-title AstranovaHeroFont tracking-widest">
-              <span className=" text-5xl text-teal-600">A</span>STRANOVA 2K24
-            </h3>
+              <span className=" text-5xl text-teal-600">A</span>STRANOVA 2k25            </h3>
           </div>
           <p className="about-us-text font-poppins  text-xl">
             The Department of Information Technology at Coimbatore Institute of
@@ -47,22 +46,14 @@ const Footer = () => {
                 <span>E</span>vents
               </Link>
             </li>
-            <li className="footer-items ">
-              <Link to={"/games/online"} className="footer-links">
-                <span>G</span>ames
-              </Link>
-            </li>
-            <li className="footer-items  ">
-              <Link to={"#"} className="footer-links">
-                <span>C</span>hronoline
-              </Link>
-            </li>
-            {/* <li className="footer-items  ">
+
+          
+             <li className="footer-items  ">
               <Link to={"/team"} className="footer-links">
                 <span>O</span>ur
                 <span className=" ml-2">T</span>eam
               </Link>
-            </li> */}
+            </li> 
           </ul>
         </div>
 
@@ -75,7 +66,7 @@ const Footer = () => {
             <li className="footer-row-align footer-items">
               <BsTelephoneFill size={20} className="icons phone" />
               <span className="text-2xl lg:text-lg">
-                +91 97867 25825 , +91 90808 22469
+                +91 9345738810 , +91 8778245670
               </span>
             </li>
             <li className="footer-row-align footer-items">
@@ -105,7 +96,7 @@ const Footer = () => {
         </div>
         <div className=" flex items-center text-center gap-3 font-poppins text-2xl lg:text-lg">
           <p>Made with</p> <FaHeart color="red" size={25} />
-          <p> by IT Devs</p>
+          <p> by IT Devs (Cyber Bullies)</p>
         </div>
         <div className="flex items-center gap-4">
           <a

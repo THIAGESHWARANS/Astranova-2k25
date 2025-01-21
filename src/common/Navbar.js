@@ -1,7 +1,7 @@
 import logo from "../assets/logo.png";
 import { GiTimeSynchronization } from "react-icons/gi";
 import { HiOutlineHome } from "react-icons/hi";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AiOutlineDoubleRight } from "react-icons/ai";
 import { FaTeamspeak } from "react-icons/fa";
 import { SiEventstore, SiRiotgames } from "react-icons/si";
@@ -12,6 +12,12 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+
+  // Ensure the menu opens automatically when the component mounts
+  useEffect(() => {
+    setOpen(true);
+  }, []);
+
   return (
     <nav className="flex items-center justify-between pb-10 md:px-4">
       <Link to={"/"}>
@@ -44,7 +50,6 @@ const Navbar = () => {
         className="relative flex items-center gap-2 mb-3 mr-4 lg:absolute lg:right-10 lg:top-20 cursor-pointer"
       >
         <p className="text-xl text-white AstranovaHeroFont tracking-widest">
-          {" "}
           {open ? (
             <motion.div whileTap={{ scale: 0.6 }} className="flex items-center">
               <span className="text-4xl text-teal-500">C</span>
@@ -71,7 +76,7 @@ const Navbar = () => {
             <ul>
               <Link
                 to={"/"}
-                className="flex text-lg px-4 py-4 items-center gap-3 rounded-t-lg  transition-all duration-300 ease-in-out  hover:bg-teal-300 "
+                className="flex text-lg px-4 py-4 items-center gap-3 rounded-t-lg transition-all duration-300 ease-in-out hover:bg-teal-300"
               >
                 <HiOutlineHome size={20} />{" "}
                 <div className="text-teal-500 text-2xl ">
@@ -80,7 +85,7 @@ const Navbar = () => {
               </Link>
               <Link
                 to={"/about-us"}
-                className="flex text-lg px-4 py-4 items-center gap-3 transition-all duration-300 ease-in-out hover:bg-teal-300 "
+                className="flex text-lg px-4 py-4 items-center gap-3 transition-all duration-300 ease-in-out hover:bg-teal-300"
               >
                 <TbUnlink size={20} />{" "}
                 <div className="text-teal-500 text-2xl ">
@@ -89,7 +94,7 @@ const Navbar = () => {
               </Link>
               <Link
                 to={"/events"}
-                className="flex text-lg px-4 py-4 items-center gap-3 transition-all duration-300 ease-in-out hover:bg-teal-300 "
+                className="flex text-lg px-4 py-4 items-center gap-3 transition-all duration-300 ease-in-out hover:bg-teal-300"
               >
                 <SiEventstore size={20} />{" "}
                 <div className="text-teal-500 text-2xl ">
@@ -97,41 +102,24 @@ const Navbar = () => {
                 </div>
               </Link>
               <Link
-                to={"/games/online"}
-                className="flex text-lg px-4 py-4 items-center gap-3 transition-all duration-300 ease-in-out hover:bg-teal-300 "
-              >
-                <SiRiotgames size={20} />{" "}
-                <div className="text-teal-500 text-2xl ">
-                  G<span className="text-black text-xl">ames</span>{" "}
-                </div>
-              </Link>
-              <Link
-                to={"#"}
-                className="flex text-lg px-4 py-4 items-center gap-3 transition-all duration-300 ease-in-out hover:bg-teal-300 "
+                to={"/chronoline"}
+                className="flex text-lg px-4 py-4 items-center gap-3 transition-all duration-300 ease-in-out hover:bg-teal-300"
               >
                 <GiTimeSynchronization size={20} />{" "}
                 <div className="text-teal-500 text-2xl ">
                   C<span className="text-black text-xl">hronoline</span>{" "}
                 </div>
               </Link>
-              {/* <Link
+              <Link
                 to={"/team"}
-                className="flex text-lg px-4 py-4 items-center gap-3 transition-all duration-300 ease-in-out hover:bg-teal-300 "
+                className="flex text-lg px-4 py-4 items-center gap-3 transition-all duration-300 ease-in-out hover:bg-teal-300"
               >
                 <VscOrganization size={20} />{" "}
                 <div className="text-teal-500 text-2xl ">
                   O<span className="text-black text-xl">ur Team</span>{" "}
                 </div>
-              </Link> */}
-              <Link
-                to={"/contact-us"}
-                className="flex text-lg px-4 py-4 items-center gap-3 rounded-b-lg  transition-all duration-300 ease-in-out hover:bg-teal-300 "
-              >
-                <FaTeamspeak size={20} />{" "}
-                <div className="text-teal-500 text-2xl ">
-                  C<span className="text-black text-xl">ontact Us</span>{" "}
-                </div>
               </Link>
+
             </ul>
           </motion.div>
         )}

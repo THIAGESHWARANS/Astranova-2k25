@@ -14,87 +14,92 @@ import { Helmet } from "react-helmet";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const march08Events = [
-  {
-    name: "Reverse Coding",
-    time: "9:30 AM to 11:30 AM",
-    venue: "IT-442",
-  },
+const feb28Events = [
   {
     name: "Paper Presentation",
-    time: "Starts at 10:00 AM",
+    time: "10.00 AM onwards",
+    venue: "IT Block",
+  },
+  {
+    name: "Rapid Coding",
+    time: "10.00 AM - 12.00 PM",
     venue: "IT-443",
   },
   {
-    name: "Anime Quiz",
-    time: "10:30 AM to 11:30 AM",
-    venue: "IT-443",
-  },
-  {
-    name: "Astranova Coding",
-    time: "11:00 AM to 01:00 PM",
-    venue: "IT-442",
+    name:"Anime Quiz",
+    time: "11.30 - 1.00 PM",
+    venue: "IT-206",
   },
   {
     name: "Technical Quiz",
-    time: "01:45 PM to 03:00 PM",
+    time: "12.00 - 1.30 PM",
+    venue: "IT-443",
+  },
+  {
+    name: "Code Unscramble",
+    time: "12.00 - 1.30 PM",
+    venue: "IT-442",
+  },
+  {
+    name: "IPL Auction",
+    time: "Starts 1.30 PM",
+    venue:"LBCH",
+  },
+  {
+    name: "Squid Game",
+    time: "Starts 2.00 PM",
     venue: "IT-206",
   },
   {
-    name: "Connexion",
-    time: "02:00 PM to 03:15 PM",
-    venue: "IT-206",
-  },
-  {
-    name: "Code Hunt",
-    time: "03:00 PM to 04:30 PM",
+    name: "Blind Coding",
+    time: "2:30 PM to 04:00 PM",
     venue: "IT-444",
   },
   {
-    name: "Treasure Hunt",
+    name: "workshop",
     time: "03:00 PM to 04:30 PM",
     venue: "IT Block",
   },
 ];
 
-const march09Events = [
+const march01Events = [
   {
-    name: "Bug Busters",
-    time: "09:00 AM to 10:00 AM",
+    name: "Code Golf",
+    time: "09:30 AM to 11:00 AM",
     venue: "IT-206",
   },
   {
-    name: "Rapid Coding",
-    time: "09:30 AM to 11:00 AM",
+    name: "Project Expo",
+    time: "Starts 10.00 AM",
+    venue: "LBCH",
+  },
+  {
+    name: "Tik Tik Tik",
+    time: "10:30 AM to 12:30 AM",
     venue: "IT-207",
   },
   {
     name: "Kollywood Quiz",
-    time: "10:30 AM to 11:30 AM",
+    time: "11.00 AM to 12:30 AM",
     venue: "IT-206",
   },
   {
-    name: "Relay Coding",
-    time: "11:00 AM to 01:00 PM",
+    name: "Code Hunt",
+    time: "11:00 AM to 12:30 PM",
     venue: "IT-442",
   },
   {
-    name: "Maathi Yosi",
-    time: "12:30 PM to 01:30 PM",
-    venue: "IT-444",
+    name:"Relay Coding",
+    time:"2.00 - 3.30",
+    venue:"IT-443",
   },
   {
-    name: "Ideathon",
-    time: "02:00 PM to 04:00 PM",
-    venue: "IT-443",
-  },
-  {
-    name: "Dumb Charades",
+    name: "Seminar",
     time: "02:30 PM to 03:30 PM",
     venue: "IT-443",
   },
   {
-    name: "Prompt Engineering",
+    name: "Treasure Hunt",
     time: "02:30 PM to 03:30 PM",
     venue: "IT-206",
   },
@@ -226,16 +231,8 @@ const Chronoline = () => {
                       E<span className="text-black text-xl">vents</span>{" "}
                     </div>
                   </Link>
-                  <Link
-                    to={"/games/online"}
-                    className="flex text-lg px-4 py-4 items-center gap-3 transition-all duration-300 ease-in-out hover:bg-teal-300 "
-                  >
-                    <SiRiotgames size={20} />{" "}
-                    <div className="text-teal-500 text-2xl ">
-                      G<span className="text-black text-xl">ames</span>{" "}
-                    </div>
-                  </Link>
-                  {/* <Link
+     
+                   <Link
                     to={"/team"}
                     className="flex text-lg px-4 py-4 items-center gap-3 transition-all duration-300 ease-in-out hover:bg-teal-300 "
                   >
@@ -243,16 +240,8 @@ const Chronoline = () => {
                     <div className="text-teal-500 text-2xl ">
                       O<span className="text-black text-xl">ur Team</span>{" "}
                     </div>
-                  </Link> */}
-                  <Link
-                    to={"/contact-us"}
-                    className="flex text-lg px-4 py-4 items-center gap-3 rounded-b-lg  transition-all duration-300 ease-in-out hover:bg-teal-300 "
-                  >
-                    <FaTeamspeak size={20} />{" "}
-                    <div className="text-teal-500 text-2xl ">
-                      C<span className="text-black text-xl">ontact Us</span>{" "}
-                    </div>
-                  </Link>
+                  </Link> 
+
                 </ul>
               </motion.div>
             )}
@@ -282,7 +271,7 @@ const Chronoline = () => {
         {/* March 17 Events */}
         <span>
           <ul>
-            {march08Events?.map((event) => (
+            {feb28Events?.map((event) => (
               <li key={event.name}>
                 {/* Event Card */}
                 <div>
@@ -311,7 +300,7 @@ const Chronoline = () => {
             <span className="text-5xl text-teal-600">M</span>arch 09
           </h2>
           <ul>
-            {march09Events?.map((event) => (
+            {march01Events?.map((event) => (
               <li key={event.name}>
                 {/* Event Card */}
                 <div>

@@ -9,41 +9,32 @@ const CountDown = () => {
   const [show, setShow] = useState(true);
 
   useEffect(() => {
-    const countDownDate = new Date("Mar 8, 2024 09:00:00").getTime();
-
-    // Update the count down every 1 second
+    const countDownDate = new Date(2025, 1, 28, 23, 59, 59).getTime();
+  
     const interval = setInterval(() => {
-      // Get today's date and time
       const now = new Date().getTime();
-
-      // Find the distance between now and the count down date
       const distance = countDownDate - now;
-
-      // If the count down is finished, clear the interval
+  
       if (distance < 0) {
         clearInterval(interval);
         setShow(false);
         return;
       }
-
-      // Calculate days, hours, minutes and seconds left
+  
       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Update the state variables with the new values
+  
       setDays(days < 10 ? "0" + days : days.toString());
       setHours(hours < 10 ? "0" + hours : hours.toString());
       setMinutes(minutes < 10 ? "0" + minutes : minutes.toString());
       setSeconds(seconds < 10 ? "0" + seconds : seconds.toString());
     }, 1000);
-
-    // Clear the interval when the component unmounts
+  
     return () => clearInterval(interval);
   }, []);
+  
   if (!show) return <></>;
 
   return (

@@ -1,10 +1,12 @@
-// import OurTeam from "./components/our-team/OurTeam";
+import OurTeam from "./components/our-team/OurTeam";
 import { Routes, Route } from "react-router-dom";
 import ContactUs from "./components/contact-us/ContactUs";
-// import Chronoline from "./components/chronoline/Chronoline";
+import Chronoline from "./components/chronoline/Chronoline";
 import AllEvents from "./components/all-events/AllEvents";
 import Home from "./components/home/Home";
 import AboutUs from "./components/about-us/AboutUs";
+import A2k24 from "./components/A2k24/A2k24"
+
 
 // Technical Events
 import BugBusters from "./event-detail-page/technical-events/BugBusters";
@@ -62,18 +64,19 @@ function App() {
             alt="astranova-logo"
             className="w-[65%] lg:w-[25%] mb-6 animate-pulse"
           />
-          <PropagateLoader size={20} color="#b825d6" loading={loading} />
+          <PropagateLoader size={20} color="#008080" loading={loading} />
         </div>
       ) : (
         <>
           <AnimatePresence mode="wait">
             <Routes>
               <Route path="/" element={<Home />} />
-              {/* <Route path="/team" element={<OurTeam />} /> */}
+              <Route path="/team" element={<OurTeam />} /> 
               <Route path="/events" element={<AllEvents />} />
-              {/* <Route path="/chronoline" element={<Chronoline />} /> */}
+              <Route path="/chronoline" element={<Chronoline />} /> 
               <Route path="/contact-us" element={<ContactUs />} />
               <Route path="/about-us" element={<AboutUs />} />
+              <Route path="/A2k24" element={<A2k24 />} />
               {/* Technical-Events */}
               <Route path="/events/bug-busters" element={<BugBusters />} />
               <Route
